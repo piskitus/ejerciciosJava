@@ -5,12 +5,9 @@ public class circulo extends formaAbstracta{
 	
 	public circulo (double rad){
 		super("circulo");
+		this.radio = rad;
 	}
 
-    public void setRadio(double rad) {
-        this.radio = rad;
-    }
-	
 	public double getRadio(){
 		return radio;
 	}
