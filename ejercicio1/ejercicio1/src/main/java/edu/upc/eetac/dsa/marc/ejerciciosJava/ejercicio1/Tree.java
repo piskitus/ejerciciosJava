@@ -32,7 +32,7 @@ public class Tree {
 		return this.nombre;
 	}
 
-
+//codigo profes
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Un ");
