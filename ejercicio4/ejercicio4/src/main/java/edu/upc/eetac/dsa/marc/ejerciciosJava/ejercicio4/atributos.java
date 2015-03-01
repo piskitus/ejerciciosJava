@@ -4,6 +4,8 @@ import java.io.*;
 
 
 public class atributos {
+	
+	//atributos privados
 	private int entero;
 	private double decimal;
 	private char caracter;
@@ -15,7 +17,7 @@ public class atributos {
 		this.decimal = d;
 		this.caracter=c;
 	}
-
+//GETS & SETS
 	public int getEntero() {
 		return entero;
 	}
@@ -38,7 +40,7 @@ public class atributos {
 	formato binario el valor de los tres atributos en el orden en el que se han enumerado.*/
 	public void guardarEnFichero(String fichero)throws IOException{
         DataOutputStream dos = new DataOutputStream(new FileOutputStream(fichero));
-        dos.writeInt(entero);
+        dos.writeInt(entero);//escru¡ibe entero,decimal,caracter
         dos.writeDouble(decimal);
         dos.writeChar(caracter);
         dos.close();
@@ -51,6 +53,7 @@ devuelva.*/
         int integer = dis.readInt();
         double decimal = dis.readDouble();
         char character = dis.readChar();
+        dis.close();
 
         return new atributos(integer, decimal, character);
     }
