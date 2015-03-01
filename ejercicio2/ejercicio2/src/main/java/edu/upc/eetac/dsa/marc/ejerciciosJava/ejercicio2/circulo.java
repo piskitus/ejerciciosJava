@@ -1,6 +1,6 @@
 package edu.upc.eetac.dsa.marc.ejerciciosJava.ejercicio2;
 
-public class circulo extends formaAbstracta{
+public class circulo extends formaAbstracta{ //extends es heredar
 	private double radio;
 	
 	public circulo (double rad){
